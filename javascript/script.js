@@ -9,7 +9,7 @@ var emptyRow = "<tr><td colspan='6' class='text-center'> Nenhum dados</td></tr>"
       $("#txtName").val(name);
       $("#txtcurso").val(curso);
       $("#txtId").val(id);
-      $("#btnSave").text("Update");
+      $("#btnSave").text("Atualizar");
     });
 
     $('#tblData').on('click', '.btn-delete', function () {
@@ -44,7 +44,7 @@ var emptyRow = "<tr><td colspan='6' class='text-center'> Nenhum dados</td></tr>"
   function clearForm() {
     $("#txtName").val("");
     $("#txtcurso").val("");
-    $("#btnSave").text("Add");
+    $("#btnSave").text("Adicionar");
   }
 
   function addEmptyRow() {
@@ -65,8 +65,8 @@ var emptyRow = "<tr><td colspan='6' class='text-center'> Nenhum dados</td></tr>"
         criaTabela = criaTabela + "<td class='txtName'  data-id=" + element.id + ">" + element.name + "</td>";
         criaTabela = criaTabela + "<td class='txtcurso'>" + element.curso + "</td>";
         criaTabela = criaTabela + "    <td class='tdAction text-center'>";
-        criaTabela = criaTabela + "        <button class='btn btn-sm btn-success btn-edit'> Edit</button>";
-        criaTabela = criaTabela + "        <button class='btn btn-sm btn-danger btn-delete'> Delete</button>";
+        criaTabela = criaTabela + "        <button class='btn btn-sm btn-success btn-edit'>Editar</button>";
+        criaTabela = criaTabela + "        <button class='btn btn-sm btn-danger btn-delete'>Deletar</button>";
         criaTabela = criaTabela + "    </td>";
         criaTabela = criaTabela + " </tr>";
         $("#tblData tbody").append(criaTabela);
